@@ -1,0 +1,55 @@
+.header {
+    position: absolute;
+    top: 0%;
+    width: 100vw;
+    height: 9vh;
+    display: flex;
+    align-items: center;
+  }
+  .name {
+    position: relative;
+    left: 10%;
+    font-size: 2vw;
+    font-family: 'Edu TAS Beginner', cursive;
+    color: white;
+  }
+  .header-items {
+    position: relative;
+    width: 40%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    left: 50%;
+  }
+  .header-items a {
+    color: white;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 510;
+    transition: 1s;
+  }
+  .header-items button {
+    width: 8vw;
+    height: 4vh;
+    outline: none;
+    border: none;
+    border-bottom-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-image: linear-gradient(to right, #f14268 , #e78260);
+    color: white;
+    font-size: 1vw;
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .header-items button:hover {
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+  .header-items a:hover {
+    transform: scale(1.05);
+    color: #e78260;
+  }
