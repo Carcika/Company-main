@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.App {
+  width: 100vw;
+  height: 100vh;
+}
+.background {
+  position: absolute;
+  transform: scale(1.01);
+  width: 100vw;
+  height: 100vh;
+  z-index: 0;
+}
+.welcome-text {
+  position: absolute;
+  top: 26%;
+  left: 10%;
+  width: 25%;
+  height: 40vh;
+  font-family: 'Nunito', sans-serif;
+}
+.welcome-text h1 {
+  color: white;
+  font-size: 2vw;
+}
+.welcome-text p {
+  color: rgba(255, 255, 255, 0.715);
+  font-size: 1vw;
+}
+.welcome-text button {
+  position: relative;
+  top: 7%;
+  width: 7vw;
+  height: 4.5vh;
+  outline: none;
+  border: none;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+  background-image: linear-gradient(to right, #f14268 , #e78260);
+  color: white;
+  font-size: 0.8vw;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: 1s;
+}
+.welcome-text button:hover {
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 0px;
+  border-top-right-radius: 0px;
+}
+.gif {
+  position: absolute;
+  left: 53%;
+  top: 10%;
+  width: 40%;
+}
+
