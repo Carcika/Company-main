@@ -1,6 +1,8 @@
 import './landing.css';
 import React, { Component } from 'react';
-import svg from '../assets/meta.svg'
+import svg from '../assets/meta.svg';
+import Offer from './offer';
+import Header from './header';
 
 function Landing() {
   return (

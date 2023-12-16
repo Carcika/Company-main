@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.css';
-import {  Button, Dropdown  } from 'antd'
+import {  Button, Dropdown  } from 'antd';
+import {Link} from 'react-scroll'
 
 const items = [
     {
@@ -45,7 +46,13 @@ function Header(props) {
             <div className='header-items'>
             <a href='#'>Home</a>
             <a href='#'>About</a>
-            <a href='#'>Services</a>
+            <Link activeClass="active" 
+            to="offer" 
+            spy={true} 
+            smooth={true} 
+            offset={1000} 
+            duration={500} 
+            href='#'>Services</Link>
             <a href='#'>Features</a>
             <a href='#'>Contact us</a>
             </div>
