@@ -42,19 +42,15 @@ function Header(props) {
         <div className="header">
             <h1 className='name'>Dvise</h1>
             <div className='header-items'>
-                <Dropdown
-                menu={{
-                  items,
-                }}
-                placement="bottom"
-                arrow={{
-                  pointAtCenter: true,
-                }}
-              >
-              <a href='#'>Home +</a>
-              </Dropdown>
-              <a href='#'>Log in</a>
-              <button>Registration</button>
+            <a href='#'>Home</a>
+            <a href='#'>About</a>
+            <a href='#'>Services</a>
+            <a href='#'>Features</a>
+            <a href='#'>Contact us</a>
+            </div>
+            <div className='sign'>
+              <a href='#'>Sign in</a>
+              <img className='user' src={require("../assets/user1.png")} />
             </div>
       </div>
     );

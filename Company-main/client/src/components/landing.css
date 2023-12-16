@@ -6,55 +6,85 @@
   width: 100vw;
   height: 100vh;
 }
-.background {
+.parent {
   position: absolute;
-  transform: scale(1.01);
-  width: 100vw;
   height: 100vh;
-  z-index: 0;
+  left: 10%;
+  width: 40vw;
+  display: flex;
+  align-items: center;
 }
 .welcome-text {
-  position: absolute;
-  top: 26%;
-  left: 10%;
-  width: 25%;
-  height: 40vh;
-  font-family: 'Nunito', sans-serif;
+  position: relative;
+  width: 100%;
+  height: 70%;
 }
 .welcome-text h1 {
-  color: white;
+  color: #083E9E;
+  font-size: 3.5vw;
+  font-weight: bold;
+}
+.welcome-text h2 {
+  position: relative;
+  bottom: 3%;
+  color: #083E9E;
+  opacity: 90%;
   font-size: 2vw;
+  font-family: 'Nunito', sans-serif;
 }
 .welcome-text p {
-  color: rgba(255, 255, 255, 0.715);
-  font-size: 1vw;
-}
-.welcome-text button {
   position: relative;
-  top: 7%;
-  width: 7vw;
-  height: 4.5vh;
+  top: 5%;
+  color: #083E9E;
+  opacity: 80%;
+  font-size: 1.1vw;
+  width: 65%;
+}
+.getStarted {
+  position: relative;
+  top: 13%;
+  width: 9vw;
+  height: 5.5vh;
   outline: none;
   border: none;
-  border-bottom-left-radius: 20px;
-  border-top-right-radius: 20px;
-  background-image: linear-gradient(to right, #f14268 , #e78260);
+  border-radius: 50px;
+  background-image: linear-gradient(to right, #17ABC3 , #03339A);
   color: white;
   font-size: 0.8vw;
   font-family: 'Nunito', sans-serif;
   cursor: pointer;
   transition: 1s;
 }
-.welcome-text button:hover {
-  border-top-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  border-bottom-left-radius: 0px;
-  border-top-right-radius: 0px;
+.learnMore {
+  position: relative;
+  top: 13%;
+  left: 6%;
+  width: 9vw;
+  height: 5.5vh;
+  outline: none;
+  border: none;
+  border-radius: 50px;
+  background: linear-gradient(white, white) padding-box,
+              linear-gradient(to right, #17ABC3, #03339A) border-box;
+  border-radius: 50em;
+  border: 2px solid transparent;
+  color: #03339A;
+  font-size: 0.825vw;
+  font-family: 'Nunito', sans-serif;
+  cursor: pointer;
+  transition: 1s;
 }
 .gif {
   position: absolute;
-  left: 53%;
-  top: 10%;
-  width: 40%;
+  left: 57%;
+  top: 18%;
+  width: 32%;
 }
-
+.welcome-text section {
+  position: relative;
+  bottom: 1%;
+  width: 18%;
+  height: 1vh;
+  background-image: linear-gradient(to right, #17ABC3 , #03339A);
+  border-radius: 50px;
+}
