@@ -40,6 +40,7 @@ const items = [
 function Header(props) {
     return (
         <div className="header">
+        <div className='s'></div>
             <h1 className='name'>Dvise</h1>
             <div className='header-items'>
             <a href='#'>Home</a>

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Edu+TAS+Beginner&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
 
 .offer {
     width: 100vw;
@@ -7,21 +10,45 @@
 }
 .offer-text {
     position: relative;
-    top: 10%;
+    top: 18%;
     left: 50%;
-    transform: translate(-50%);
-    width: 20%;
-    font-size: 1vw;
-    font-family: 'Roboto Mono', monospace;
-    color: rgba(45, 0, 119, 1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    width: 30%;
+    font-size: 0.9vw;
+    color: #04399C;
+    font-family: 'Nunito', sans-serif;
 }
 .offer-text section {
-    width: 55%;
-    height: 1vh;
-    background-image: linear-gradient(to right, #f14268 , #e78260);
+    position: relative;
+    top: 1vh;
+    width: 30%;
+    height: 0.5vh;
+    background-image: linear-gradient(to right, #16A5C1 , #043C9D);
     border-radius: 50px;
+}
+.offerImg {
+    position: relative;
+    top: 3%;
+    left: 5%;
+}
+.items {
+    position: absolute;
+    top: 140%;
+    left: 50.3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+}
+.itemsChild {
+    position: relative;
+    display: flex;
+}
+.itemsChild p {
+    padding-left: 5%;
+    width: 75%;
+    font-size: 1vw;
+    color: #043D9D;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
+    opacity: 80%;
 }

@@ -10,6 +10,6 @@ body {
     border-radius: 10px;
 }
 ::-webkit-scrollbar-thumb {
-    background: rgb(175, 175, 175); 
+    background: #2960be; 
     border-radius: 3px;
 }

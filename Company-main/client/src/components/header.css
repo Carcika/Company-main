@@ -1,11 +1,13 @@
 .header {
-    position: absolute;
+    position: fixed;
     top: 0%;
     width: 98.8vw;
     height: 9vh;
     display: flex;
     align-items: center;
-    z-index: 1000;
+    z-index: 10000;
+    background: rgb(255, 255, 255, 0.4);
+    backdrop-filter: blur(10px);
   }
   .name {
     position: relative;
