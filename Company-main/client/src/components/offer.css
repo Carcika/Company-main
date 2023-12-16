@@ -27,9 +27,15 @@
 }
 .offerImg {
     position: relative;
-    top: 3%;
+    width: 100%;
+}
+.imgSection {
+    position: absolute;
+    top: 102%;
     left: 5%;
-    width: 33%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 .items {
     position: absolute;

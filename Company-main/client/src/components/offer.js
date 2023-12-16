@@ -34,7 +34,9 @@ function Offer() {
                 <h1>Welcome to our Web Development Services:</h1>
                 <section></section>
             </div>
+            <div className='imgSection'>
             <img className='offerImg' src={svg} />
+            </div>
             <div className='items'>
                 {data.map((res) => {
                     return (
