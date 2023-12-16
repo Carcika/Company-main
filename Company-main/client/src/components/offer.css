@@ -29,6 +29,7 @@
     position: relative;
     top: 3%;
     left: 5%;
+    width: 33%;
 }
 .items {
     position: absolute;
