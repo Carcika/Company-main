@@ -44,15 +44,21 @@ function Header(props) {
         <div className='s'></div>
             <h1 className='name'>Dvise</h1>
             <div className='header-items'>
-            <a href='#'>Home</a>
-            <a href='#'>About</a>
+            <Link activeClass="active" 
+            to="home" 
+            spy={true} 
+            smooth={true} 
+            offset={0} 
+            duration={800} 
+            href='#'>Home</Link>
             <Link activeClass="active" 
             to="offer" 
             spy={true} 
             smooth={true} 
-            offset={1000} 
-            duration={500} 
+            offset={10} 
+            duration={800} 
             href='#'>Services</Link>
+            <a href='#'>About</a>
             <a href='#'>Features</a>
             <a href='#'>Contact us</a>
             </div>

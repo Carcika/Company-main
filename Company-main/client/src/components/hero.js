@@ -7,7 +7,7 @@ export default function hero() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Landing />}>
+        <Route path="home" element={<Landing />}>
           <Route path="offer" element={<Offer />} />
         </Route>
       </Routes>

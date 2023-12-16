@@ -6,7 +6,7 @@ import Header from './header';
 
 function Landing() {
   return (
-    <div className="App">
+    <div className="App" id='home'>
       <img className='gif' src={svg} />
       <div className='parent'>
       <div className='welcome-text'>
