@@ -79,6 +79,7 @@
   left: 55%;
   top: 16%;
   width: 38%;
+  animation: gif 2s infinite;
 }
 .welcome-text section {
   position: relative;
@@ -87,4 +88,13 @@
   height: 1vh;
   background-image: linear-gradient(to right, #17ABC3 , #03339A);
   border-radius: 50px;
+}
+@keyframes gif {
+  0% {
+    transform: translate(0%, 0%);
+  } 50% {
+    transform: translate(0%, 1%);
+  } 100% {
+    transform: translate(0%, 0%);
+  }
 }

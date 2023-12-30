@@ -1,6 +1,6 @@
 import React from 'react';
 import './offer.css';
-import svg from '../assets/offerImg.svg'
+import svg from '../assets/servicesImg2.svg'
 import code from '../assets/code1.svg'
 import design from '../assets/design1.svg'
 import copywriting from '../assets/copywriting1.svg'

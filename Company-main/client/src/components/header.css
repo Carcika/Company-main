@@ -41,6 +41,12 @@
   .header-items a:hover {
     color: #083E9E;
   }
+  .header-items a:focus {
+    color: #083E9E;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    text-decoration-thickness: 2px;
+  }
   .user {
     width: 20%;
   }
@@ -58,4 +64,10 @@
     font-family: 'Nunito', sans-serif;
     font-weight: 600;
     font-size: 0.9vw;
+  }
+  .active {
+    visibility: visible;
+  }
+  .inactive {
+    visibility: hidden;
   }

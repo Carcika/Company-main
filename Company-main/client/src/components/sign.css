@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+.signIn {
+    background-image: url('../assets/signBackground.png');
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.signText {
+    position: absolute;
+    top: 12%;
+    color: white;
+    left: 50%;
+    transform: translate(-50%);
+    font-family: 'Nunito', sans-serif;
+    letter-spacing: 0.125em;
+}
+.inputs {
+    position: absolute;
+    width: 22%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 30vh;
+}
+.input input {
+    height: 4.5vh;
+    border: 2px solid rgb(255, 255, 255, 0.3);
+    background: none;
+    border-radius: 10px;
+    outline: none;
+    padding-left: 5%;
+    font-size: 1vw;
+    color: white;
+}
+.input label {
+    color: white;
+    margin-bottom: 4%;
+    font-family: 'Nunito', sans-serif;
+}
+::placeholder {
+    color: white;
+    opacity: 20%;
+}
+.signInButton {
+    position: relative;
+    width: 45%;
+    height: 5.5vh;
+    outline: none;
+    border: none;
+    border-radius: 50px;
+    background: #1C4D96;
+    color: white;
+    font-size: 1vw;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .signUp {
+    position: relative;
+    width: 45%;
+    height: 5.5vh;
+    outline: none;
+    border: 3px solid #1C4D96;
+    background: none;
+    border-radius: 50px;
+    border-radius: 50em;
+    color: #ffffff;
+    font-size: 1vw;
+    font-family: 'Nunito', sans-serif;
+    cursor: pointer;
+    transition: 1s;
+  }
+  .buttons {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    width: 22%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-around;
+  }
+  .buttons a {
+    color: white;
+    text-decoration: none;
+  }

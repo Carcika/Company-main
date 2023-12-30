@@ -1,44 +1,24 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 import './header.css';
 import {  Button, Dropdown  } from 'antd';
 import {Link} from 'react-scroll'
-
-const items = [
-    {
-      key: '1',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.antgroup.com">
-          About
-        </a>
-      ),
-    },
-    {
-      key: '2',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.aliyun.com">
-          Services
-        </a>
-      ),
-    },
-    {
-      key: '3',
-      label: (
-        <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-          Features
-        </a>
-      ),
-    },
-    {
-        key: '4',
-        label: (
-          <a target="_blank" rel="noopener noreferrer" href="https://www.luohanacademy.com">
-            Contact us
-          </a>
-        ),
-      },
-  ];
+import Axios from 'axios'
 
 function Header(props) {
+
+  const [loginStatus, setLoginStatus] = useState('Sign in')
+
+  Axios.defaults.withCredentials = true
+
+  useEffect(() => {
+    Axios.get("http://localhost:3001/login").then((response)=> {
+      if(response.data.loggedIn == true){
+        setLoginStatus(response.data.user[0].username)
+      }
+      console.log(response)
+    })
+  }, [])
+
     return (
         <div className="header">
         <div className='s'></div>
@@ -58,12 +38,19 @@ function Header(props) {
             offset={10} 
             duration={800} 
             href='#'>Services</Link>
-            <a href='#'>About</a>
-            <a href='#'>Features</a>
+            <Link activeClass="active" 
+            to="aboutUs" 
+            spy={true} 
+            smooth={true} 
+            offset={10} 
+            duration={1000} 
+            href='#'>About</Link>
+            <a href='#'>Reviews</a>
             <a href='#'>Contact us</a>
             </div>
             <div className='sign'>
-              <a href='#'>Sign in</a>
+              <a href='/sign' className={loginStatus == 'Sign in' ? 'active' : 'inactive'}>{loginStatus}</a>
+              <a style={{right: '20%', position: 'relative', color: "#083E9E"}} className={loginStatus == 'Sign in' ? 'inactive' : 'active'}>{loginStatus}</a>
               <img className='user' src={require("../assets/user1.png")} />
             </div>
       </div>

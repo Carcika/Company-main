@@ -1,11 +1,17 @@
 import './landing.css';
-import React, { Component } from 'react';
+import React, { Component, useEffect, useState } from 'react';
 import svg from '../assets/meta.svg';
 import Offer from './offer';
 import Header from './header';
+import Axios from 'axios'
+import AboutUs from './aboutUs';
+import PlaceOrder from './placeOrder';
 
 function Landing() {
+
   return (
+    <>
+    <Header/>
     <div className="App" id='home'>
       <img className='gif' src={svg} />
       <div className='parent'>
@@ -21,6 +27,10 @@ function Landing() {
       </div>
       </div>
     </div>
+    <Offer/>
+    <AboutUs/>
+    <PlaceOrder/>
+    </>
   );
 }
 

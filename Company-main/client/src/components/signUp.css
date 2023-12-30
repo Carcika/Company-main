@@ -1,0 +1,11 @@
+.signUpInputs {
+    position: absolute;
+    width: 22%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+}

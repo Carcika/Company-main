@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+.about {
+    width: 100vw;
+    height: 100vh;
+}
+.aboutImg {
+    position: relative;
+    top: 19.2%;
+    left: 56.5%;
+    width: 43%;
+}
+.about-text {
+    position: relative;
+    bottom: 65%;
+    height: 75vh;
+    border-radius: 20px;
+    left: 10%;
+    width: 35%;
+    font-size: 0.8vw;
+    color: #ffffff;
+    font-family: 'Nunito', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: radial-gradient(#214174, #263238);
+}
+.about-text section {
+    position: relative;
+    width: 17%;
+    height: 0.5vh;
+    top: 5%;
+    background-image: linear-gradient(to right, #16A5C1 , #043C9D);
+    border-radius: 50px;
+}
+.ab {
+    position: relative;
+    top: 5%;
+}
+.aboutUs {
+    position: relative;
+    padding-top: 10%;
+    text-align: center;
+    font-size: 1.1vw;
+    opacity: 85%;
+    font-family: 'Roboto Mono', monospace;
+    font-weight: 400;
+    width: 90%;
+}

@@ -10,7 +10,7 @@
 }
 .offer-text {
     position: relative;
-    top: 18%;
+    top: 22%;
     left: 50%;
     width: 30%;
     font-size: 0.9vw;
@@ -31,16 +31,16 @@
 }
 .imgSection {
     position: absolute;
-    top: 102%;
-    width: 33%;
-    left: 5%;
+    top: 106%;
+    width: 40%;
+    left: 2%;
     height: 100vh;
     display: flex;
     align-items: center;
 }
 .items {
     position: absolute;
-    top: 140%;
+    top: 141%;
     left: 50.3%;
     display: flex;
     flex-direction: column;
@@ -50,6 +50,9 @@
 .itemsChild {
     position: relative;
     display: flex;
+}
+.itemsChild img {
+    width: 6.5%;
 }
 .itemsChild p {
     padding-left: 5%;
